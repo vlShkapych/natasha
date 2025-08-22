@@ -1,0 +1,47 @@
+.bar {
+  display: flex;
+  padding-left: 1px;
+  align-items: flex-end;
+  height: 2rem;
+  gap: 2px;
+  background-color: #121212;
+  border-bottom: 1px solid #2c2c2c;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 0 0.5rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.9rem;
+  background-color: #2a2a2a;
+  color: #ddd;
+  border-radius: 6px 6px 0 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  gap: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab:hover {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.tabActive {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+.closeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.closeIcon:hover {
+  color: #ff5555;
+}

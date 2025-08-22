@@ -1,0 +1,41 @@
+/* TopToolbar.module.css */
+.toolbar {
+  background-color: #1e1e1e;
+  color: white;
+  position: relative;
+  overflow: visible;
+  height: auto; /* краще автоматично */
+  padding: 0; /* padding краще внутрішньому .content */
+}
+
+.content {
+  max-height: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  background-color: #1e1e1e; /* фон для видимості */
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
+}
+
+.visible .content {
+  max-height: 500px; /* або інше велике значення, достатнє для всього контенту */
+  /* padding: 0.5rem 1rem; */
+}
+
+.toggleButton {
+  position: absolute;
+  top: 100%; /* stick right below the toolbar */
+  right: 0; /* align to the right edge */
+  /* transform: translateX(-50%); */
+  background: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px 8px;
+  z-index: 2;
+}
+
+.content {
+  padding: 0px 0px; /* тут розміри */
+}

@@ -1,0 +1,17 @@
+.crudForm {
+  font-size: 24pt;
+}
+
+.createBtn {
+  color: green;
+}
+.editBtn {
+  color: orange;
+}
+.copyBtn {
+  color: orange;
+}
+
+.deleteBtn {
+  color: red;
+}

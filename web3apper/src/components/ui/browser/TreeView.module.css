@@ -1,0 +1,28 @@
+.treeView {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  user-select: none;
+}
+
+.treeNode {
+  margin-left: 16px;
+}
+
+.treeHeader {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  width: 20px;
+  text-align: center;
+}
+
+.children {
+  margin-left: 16px;
+  border-left: 1px dashed #ccc;
+  padding-left: 8px;
+}

@@ -1,0 +1,59 @@
+.bar {
+  display: flex;
+  gap: 8px;
+  background: #222;
+  padding: 4px 8px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+
+  font-size: 0.75rem;
+  color: white;
+  cursor: default;
+  user-select: none;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  /* margin-right: 6px; */
+  flex-shrink: 0;
+}
+
+.name {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dioda {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px 1px currentColor;
+}
+
+/* States */
+.dioda.red {
+  background: #e55353;
+  color: #e55353;
+}
+
+.dioda.yellow {
+  background: #e5d153;
+  color: #e5d153;
+}
+
+.dioda.green {
+  background: #53e57a;
+  color: #53e57a;
+}

@@ -1,0 +1,76 @@
+.popupWrapper {
+  position: relative;
+  display: inline-block;
+  margin: 2px;
+  font-family: sans-serif;
+}
+
+.button {
+  padding: 4px 8px;
+  background-color: #1e1e1e;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 120px;
+  text-align: left;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background-color: #3a3a3a;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.popupContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  z-index: 1000;
+  min-width: 120px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  display: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.popupWrapper:hover > .popupContent {
+  display: block;
+}
+
+/* First level (opens down) */
+.level0 > .popupContent {
+  top: 100%;
+  left: 0;
+}
+
+/* Submenus */
+.right {
+  top: 0;
+  left: 100%;
+}
+
+.left {
+  top: 0;
+  right: 100%;
+}

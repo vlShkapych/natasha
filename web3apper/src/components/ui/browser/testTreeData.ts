@@ -1,0 +1,86 @@
+import type { TreeData } from './TreeView';
+
+export const data: TreeData = {
+  id: 1,
+  header: 'Toolbar',
+  type: 'group',
+  children: [
+    {
+      id: 11,
+      header: 'Administration',
+      type: 'group',
+      children: [
+        {
+          id: 111,
+          header: 'Users',
+          type: 'group',
+          children: [
+            { id: 1111, header: 'Users', type: 'entity', children: [] },
+            { id: 1112, header: 'Roles', type: 'entity', children: [] },
+            { id: 1113, header: 'Rights', type: 'entity', children: [] },
+            { id: 1114, header: 'User Groups', type: 'entity', children: [] },
+          ],
+        },
+        {
+          id: 112,
+          header: 'Development',
+          type: 'group',
+          children: [{ id: 1121, type: 'entity', header: 'Forms Definition', children: [] }],
+        },
+      ],
+    },
+    { id: 11, type: 'entity', header: 'Settings', children: [] },
+  ],
+};
+
+export const columnsBrowser: string[] = [
+  'ID',
+  'Login',
+  'Name',
+  'Surname',
+  'Last Login',
+  'Comments',
+];
+
+export const dataBrowser: string[][] = [
+  ['1', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['2', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['3', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['4', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['5', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['6', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['7', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['8', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['9', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['10', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['11', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['12', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['13', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['14', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['15', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['16', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['17', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['18', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['19', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['20', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['21', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['22', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['23', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['24', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['25', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['26', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['27', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['28', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['29', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['30', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['31', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['32', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['33', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['34', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['35', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['36', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['37', 'vshkapych', 'Vladik', 'Shkapych', '10:58 08-01-2025', 'The main dung master'],
+  ['38', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['39', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+  ['40', 'oladik', 'Olad', 'Marmelad', '10:58 08-01-2025', 'The ex dung master'],
+];

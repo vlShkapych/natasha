@@ -1,0 +1,55 @@
+.draggableWindow {
+  position: absolute;
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  user-select: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease; /* <--- ADD THIS */
+  padding: 0;
+}
+
+.windowHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  cursor: move;
+  background-color: #333;
+}
+.windowTitle {
+  font-weight: bold;
+}
+
+.windowContent {
+  padding: 0;
+  height: calc(100% - 36px); /* отнимаем высоту заголовка */
+  overflow: auto;
+}
+
+.resizeHandle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  cursor: se-resize;
+  background: transparent;
+}
+
+/* Enter animation */
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Exit animation */
+.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}

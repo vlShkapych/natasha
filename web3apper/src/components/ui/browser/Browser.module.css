@@ -1,0 +1,26 @@
+.browser {
+  overflow-y: scroll;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border-bottom: 1px solid #575757;
+}
+.browserHeader {
+  background-color: #232b32;
+  border: 1px solid #575757;
+  color: white;
+}
+.browserBody {
+  color: #8b8b8b;
+  background-color: #152028;
+}
+.browserBody:hover {
+  background-color: #51515179;
+}
+.selected {
+  background-color: #515151e4;
+}

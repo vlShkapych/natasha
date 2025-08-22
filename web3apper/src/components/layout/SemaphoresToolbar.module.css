@@ -1,0 +1,27 @@
+.bar {
+  display: flex;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  background: #444;
+}
+
+.red,
+.yellow,
+.green {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
